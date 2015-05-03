@@ -134,12 +134,7 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-        <!-- java el expresesion  -->
-        <!--<dependency>-->
-            <!--<groupId>de.odysseus.juel</groupId>-->
-            <!--<artifactId>juel-api</artifactId>-->
-            <!--<version>2.2.7</version>-->
-        <!--</dependency>-->
+
 
         <!--<dependency>-->
             <!--<groupId>de.odysseus.juel</groupId>-->
