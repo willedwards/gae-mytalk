@@ -1,5 +1,6 @@
 package com.lumiin.mytalk.dao;
 
+import com.lumiin.mytalk.config.ConversionConfiguration;
 import com.lumiin.mytalk.dto.CityDTO;
 import com.lumiin.mytalk.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +17,18 @@ public class CityHelperService  {
 	//@Qualifier("converter")
 
 	@Autowired
-	ConversionService conversionService;// = ConversionServiceFactory.registerConverters();
+	ConversionConfiguration conversionService;// = ConversionServiceFactory.registerConverters();
 	
 	public City toEntity(CityDTO dto){
-		
-		City entity = conversionService.convert(dto, City.class);
+		City entity = conversionService.getConversionService().convert(dto, City.class);
+
+		//City entity = conversionService.convert(dto, City.class);
 		//entity.setCountry(Ref.create(Key.create(Country.class, dto.getCountryDTO().getId())));
 		return entity;
 	}
 	
 	public CityDTO toDTO(City entity){
-		CityDTO dto = conversionService.convert(entity, CityDTO.class);
+		CityDTO dto = conversionService.getConversionService().convert(entity, CityDTO.class);
 		// Adding only country id
 		//CountryDTO countryDTO = new CountryDTO();
 		//countryDTO.setId(entity.getCountry().getKey().getId());
