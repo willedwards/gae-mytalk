@@ -10,7 +10,7 @@ import java.util.Date;
 @Entity(name = "CITY")
 @Cache
 @XmlRootElement(name = "city")
-public class City implements Serializable {
+public class City  {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@Index
@@ -23,14 +23,14 @@ public class City implements Serializable {
 	//private Ref<Country> country;
 	@Index
 	private Boolean active;
-	private Date updatedOn;
-	@Ignore
-	private String formattedDate;
+	//private Date updatedOn;
+	//@Ignore
+	//private String formattedDate;
 
-	@OnSave
-	public void updatedOn() {
-		updatedOn = new Date();
-	}
+	//@OnSave
+	//public void updatedOn() {
+	//	updatedOn = new Date();
+	//}
 
 	public Long getId() {
 		return id;
@@ -72,48 +72,23 @@ public class City implements Serializable {
 		this.active = active;
 	}
 	
-	public Date getUpdatedOn() {
-		return updatedOn;
-	}
+//	public Date getUpdatedOn() {
+//		return updatedOn;
+//	}
+//
+//	public void setUpdatedOn(Date updatedOn) {
+//		this.updatedOn = updatedOn;
+//	}
+//
+//	public String getFormattedDate() {
+//		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+//		return sdf.format(updatedOn);
+//	}
+//
+//	public void setFormattedDate(String formattedDate) {
+//		this.formattedDate = formattedDate;
+//	}
 
-	public void setUpdatedOn(Date updatedOn) {
-		this.updatedOn = updatedOn;
-	}
-
-	public String getFormattedDate() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-		return sdf.format(updatedOn);
-	}
-
-	public void setFormattedDate(String formattedDate) {
-		this.formattedDate = formattedDate;
-	}
 
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof City)) return false;
-
-		City city = (City) o;
-
-		if (id != null ? !id.equals(city.id) : city.id != null) return false;
-		if (cityCode != null ? !cityCode.equals(city.cityCode) : city.cityCode != null) return false;
-		if (cityName != null ? !cityName.equals(city.cityName) : city.cityName != null) return false;
-		if (active != null ? !active.equals(city.active) : city.active != null) return false;
-		if (updatedOn != null ? !updatedOn.equals(city.updatedOn) : city.updatedOn != null) return false;
-		return !(formattedDate != null ? !formattedDate.equals(city.formattedDate) : city.formattedDate != null);
-
-	}
-
-	@Override
-	public int hashCode() {
-		int result = id != null ? id.hashCode() : 0;
-		result = 31 * result + (cityCode != null ? cityCode.hashCode() : 0);
-		result = 31 * result + (cityName != null ? cityName.hashCode() : 0);
-		result = 31 * result + (active != null ? active.hashCode() : 0);
-		result = 31 * result + (updatedOn != null ? updatedOn.hashCode() : 0);
-		result = 31 * result + (formattedDate != null ? formattedDate.hashCode() : 0);
-		return result;
-	}
 }

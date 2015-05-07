@@ -18,18 +18,11 @@ public class ConversionConfiguration {
     @Bean (name="conversionService")
     public ConversionService getConversionService() {
         ConversionServiceFactoryBean bean = new ConversionServiceFactoryBean();
-        bean.setConverters(getConverters());
+        //bean.setConverters(getConverters());
         bean.afterPropertiesSet();
         ConversionService object = bean.getObject();
         return object;
     }
 
-    private Set<Converter> getConverters() {
-        Set<Converter> converters = new HashSet<Converter>();
 
-        //converters.add(new AddressToStringConverter());
-        //converters.add(new StringToAddressConverter());
-
-        return converters;
-    }
 }
