@@ -2,5 +2,19 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/AbstractGenericDaoImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/AbstractGenericServiceImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/CityDao.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/CityDaoImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/CityHelperService.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/GenericDao.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dao/GenericService.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/dto/CityDTO.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/exception/DatabaseException.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/model/City.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/model/CityModel.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/model/CityStatus.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/service/CityService.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lumiin/mytalk/service/CityServiceImpl.java" charset="windows-1252" />
   </component>
 </project>

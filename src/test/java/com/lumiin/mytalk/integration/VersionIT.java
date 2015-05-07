@@ -15,8 +15,6 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.io.IOException;
 
-import static junit.framework.TestCase.assertEquals;
-
 /**
  * Author: wge
  * Date: 01/05/2015
